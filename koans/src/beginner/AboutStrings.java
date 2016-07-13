@@ -160,14 +160,10 @@ public class AboutStrings {
     }
 
 
-    // ***********************
-    // Are these correct?
-    // ***********************
     @Koan
     public void insufficientArgumentsToStringFormatCausesAnError() {
         try {
             String.format("%s %s %s", "a", "b");
-            throw new Exception("Insufficient arguments!");
         } catch (Exception e) {
             assertEquals(e.getClass(), e.getClass());
             assertEquals(e.getMessage(), e.getMessage());
